@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingvinBot", "PingvinBot\PingvinBot.csproj", "{A7E0E419-D725-46FB-A1CD-7ECF9AD10C46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4A3C9DC1-9C31-47E3-A787-7FDF53010B39}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		stylecop.json = stylecop.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7E0E419-D725-46FB-A1CD-7ECF9AD10C46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7E0E419-D725-46FB-A1CD-7ECF9AD10C46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7E0E419-D725-46FB-A1CD-7ECF9AD10C46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7E0E419-D725-46FB-A1CD-7ECF9AD10C46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6A4C7CE-CCB7-4169-99AF-F7F373F6B427}
+	EndGlobalSection
+EndGlobal

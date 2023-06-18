@@ -1,0 +1,140 @@
+# Remove the line below if you want to inherit .editorconfig settings from higher directories
+root = true
+
+# C# files
+[*.cs]
+
+### Core EditorConfig Options ###
+
+# Indentation and spacing
+indent_size = 4
+indent_style = space
+tab_width = 4
+
+# New line preferences
+end_of_line = crlf
+insert_final_newline = true
+
+# Visual Studio
+csharp_style_namespace_declarations=file_scoped   # Use file scoped namespace by default for new class files
+
+### Naming styles ###
+
+# Naming rules
+
+dotnet_naming_rule.private_or_internal_static_field_should_be_pascal_case.severity = warning
+dotnet_naming_rule.private_or_internal_static_field_should_be_pascal_case.symbols = private_or_internal_static_field
+dotnet_naming_rule.private_or_internal_static_field_should_be_pascal_case.style = pascal_case
+
+dotnet_naming_rule.private_or_internal_field_should_be__fieldname.severity = suggestion
+dotnet_naming_rule.private_or_internal_field_should_be__fieldname.symbols = private_or_internal_field
+dotnet_naming_rule.private_or_internal_field_should_be__fieldname.style = _fieldname
+
+dotnet_naming_rule.local_should_be_camelcase.severity = warning
+dotnet_naming_rule.local_should_be_camelcase.symbols = local
+dotnet_naming_rule.local_should_be_camelcase.style = camelcase
+
+dotnet_naming_rule.constant_field_should_be_pascal_case.severity = warning
+dotnet_naming_rule.constant_field_should_be_pascal_case.symbols = constant_field
+dotnet_naming_rule.constant_field_should_be_pascal_case.style = pascal_case
+
+# Symbol specifications
+
+dotnet_naming_symbols.private_or_internal_static_field.applicable_kinds = field
+dotnet_naming_symbols.private_or_internal_static_field.applicable_accessibilities = internal, private, private_protected
+dotnet_naming_symbols.private_or_internal_static_field.required_modifiers = static
+
+dotnet_naming_symbols.private_or_internal_field.applicable_kinds = field
+dotnet_naming_symbols.private_or_internal_field.applicable_accessibilities = internal, private, private_protected
+dotnet_naming_symbols.private_or_internal_field.required_modifiers = 
+
+dotnet_naming_symbols.local.applicable_kinds = local
+dotnet_naming_symbols.local.applicable_accessibilities = local
+dotnet_naming_symbols.local.required_modifiers = 
+
+dotnet_naming_symbols.constant_field.applicable_kinds = field
+dotnet_naming_symbols.constant_field.applicable_accessibilities = *
+dotnet_naming_symbols.constant_field.required_modifiers = const
+
+# Naming styles
+
+dotnet_naming_style._fieldname.required_prefix = _
+dotnet_naming_style._fieldname.required_suffix = 
+dotnet_naming_style._fieldname.word_separator = 
+dotnet_naming_style._fieldname.capitalization = camel_case
+
+dotnet_naming_style.camelcase.required_prefix = 
+dotnet_naming_style.camelcase.required_suffix = 
+dotnet_naming_style.camelcase.word_separator = 
+dotnet_naming_style.camelcase.capitalization = camel_case
+
+dotnet_naming_style.pascal_case.required_prefix = 
+dotnet_naming_style.pascal_case.required_suffix = 
+dotnet_naming_style.pascal_case.word_separator = 
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+
+### Stylecop rules ###
+
+# Default rulesets:
+# https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/StyleCop.Analyzers/StyleCop.Analyzers.CodeFixes/rulesets/StyleCopAnalyzersDefault.ruleset
+
+# Readability
+
+dotnet_diagnostic.SA1101.severity   = none        # Prefix local calls with this
+
+# Ordering
+
+dotnet_diagnostic.SA1200.severity   = none        # Using directive should appear within a namespace declaration
+dotnet_diagnostic.SA1201.severity   = suggestion  # Elements should appear in the correct order
+dotnet_diagnostic.SA1202.severity   = suggestion  # Elements should be ordered by access
+
+# Naming
+
+dotnet_diagnostic.SA1309.severity   = none        # Field names should not begin with underscore
+
+# Layout rules
+
+dotnet_diagnostic.SA1502.severity   = none        # Element should not be on a single line
+dotnet_diagnostic.SA1503.severity   = none        # Braces should not be omitted
+
+# Documentation
+
+dotnet_diagnostic.SA1600.severity   = none        # Elements should be documented
+dotnet_diagnostic.SA1601.severity   = none        # Partial elements should be documented
+dotnet_diagnostic.SA1602.severity   = none        # Enumeration items should be documented
+dotnet_diagnostic.SA1633.severity   = none        # File should have header
+dotnet_diagnostic.SA1649.severity   = none        # File name should match first type name
+
+### .NET Code-style rules ###
+
+# Expression-level preferences
+
+dotnet_diagnostic.IDE0032.severity  = suggestion  # Use auto-implemented property
+
+# Modifier preferences
+
+dotnet_diagnostic.IDE0044.severity  = warning     # Add readonly modifier
+
+# Naming
+
+dotnet_diagnostic.IDE1006.severity  = warning     # Naming rule violation
+
+# Unnecessary code rules
+
+dotnet_diagnostic.IDE0058.severity  = none        # Remove unnecessary expression value
+
+### .NET Code-quality rules ###
+
+# Reliability
+
+dotnet_diagnostic.CA2016.severity   = warning     # Forward the CancellationToken parameter to methods that take one
+
+# Usage
+
+dotnet_diagnostic.CA2208.severity   = warning     # Instantiate argument exceptions correctly
+
+### C# compiler messages ###
+
+# Level 4 warning messages
+
+dotnet_diagnostic.CS1591.severity   = none        # Missing XML comment for publicly visible type or member
