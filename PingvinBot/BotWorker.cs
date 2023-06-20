@@ -70,7 +70,7 @@ public class BotWorker : IHostedService
 
         try
         {
-            var activity = new DiscordActivity($"Chiller på Bouvetøya", ActivityType.Playing);
+            var activity = new DiscordActivity($"Chiller med gutta på Bouvetøya", ActivityType.Playing);
 
             await _client.UpdateStatusAsync(activity);
         }

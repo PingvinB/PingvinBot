@@ -53,7 +53,7 @@ public class PingvinGptMessageHandler
 
             var boundedMessageQueue = GetBoundedMessageQueue(channel, systemPromptsMessages);
 
-            // Add new message from notification
+            // Add new message from event
             var newMessageContent = message.Content;
             var newMessageUser = author.GetNicknameOrUsername();
 

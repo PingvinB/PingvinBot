@@ -19,7 +19,7 @@ IHost host = Host.CreateDefaultBuilder(args)
 
             LogLevel logLevel = Enum.Parse<LogLevel>(defaultLogLevel);
 
-            var socketConfig = new DiscordConfiguration
+            var discordConfig = new DiscordConfiguration
             {
                 MinimumLogLevel = logLevel,
                 TokenType = TokenType.Bot,
@@ -27,7 +27,7 @@ IHost host = Host.CreateDefaultBuilder(args)
                 Intents = DiscordIntents.All,
             };
 
-            return new DiscordClient(socketConfig);
+            return new DiscordClient(discordConfig);
         });
 
         services.AddHostedService<BotWorker>();
